@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care Together - Transformando Vidas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Bibliotecas externas -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- Fim bibliotecas externas -->
+</head>
+<body>
+    <!-- Loader elegante -->
+    <div id="loader" class="loader">
+        <div class="loader-inner">
+            <div class="loader-logo">
+                <img src="https://media.discordapp.net/attachments/1383954838328573987/1387620618664415242/logo.png?ex=685e01e8&is=685cb068&hm=8082d09bff761e60e2d00202ace0b088aeb51c744c0f3fe0086d7c0c0115f195&=&format=webp&quality=lossless&width=423&height=254" alt="Logo Esperança ONG" class="logo-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="logo-icon" style="display: none;">❤️</div>
+            </div>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+    <!-- Fim Loader elegante -->
+    <div class="bg-effects">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-container">
+                        <img src="https://media.discordapp.net/attachments/1383954838328573987/1387620618664415242/logo.png?ex=685e01e8&is=685cb068&hm=8082d09bff761e60e2d00202ace0b088aeb51c744c0f3fe0086d7c0c0115f195&=&format=webp&quality=lossless&width=423&height=254" alt="Logo Esperança ONG" class="logo-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="logo-icon" style="display: none;">❤️</div>
+                    </div>
+                    <span class="logo-text">Care Together</span>
+                </a>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link active">Início</a>
+                    <a href="doacoes.html" class="nav-link">Doações</a>
+                    <a href="como-doar.html" class="nav-link">Como Doar</a>
+                    <a href="saude.html" class="nav-link">Saúde</a>
+                    <a href="voluntariado.html" class="nav-link">Voluntariado</a>
+                    <a href="contato.html" class="nav-link">Contato</a>
+                </nav>
+                <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div id="mobile-menu" class="mobile-menu">
+                <nav class="mobile-nav">
+                    <a href="index.html" class="nav-link active">Início</a>
+                    <a href="doacoes.html" class="nav-link">Doações</a>
+                    <a href="como-doar.html" class="nav-link">Como Doar</a>
+                    <a href="saude.html" class="nav-link">Saúde</a>
+                    <a href="voluntariado.html" class="nav-link">Voluntariado</a>
+                    <a href="contato.html" class="nav-link">Contato</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-particles">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badge animate-fade-in">
+                        <span class="badge-icon">❤️</span>
+                        Transformando vidas através da solidariedade
+                    </div>
+                    <h1 class="hero-title animate-slide-up">
+                        Juntos Podemos
+                        <span class="gradient-text">Fazer a Diferença</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Nossa missão é levar esperança, saúde e oportunidades para comunidades em situação de vulnerabilidade social.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="como-doar.html" class="btn btn-primary btn-glow">
+                            <span class="btn-icon">❤️</span>
+                            Como Doar
+                            <div class="btn-sparkle"></div>
+                        </a>
+                        <a href="voluntariado.html" class="btn btn-secondary btn-hover-lift">
+                            <span class="btn-icon">👥</span>
+                            Seja Voluntário
+                        </a>
+                    </div>
+                    <div class="hero-arrow">
+                        <div class="arrow-down pulse">↓</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Seção de Impacto com Contador Animado (subindo para logo após o hero) -->
+        <section class="section" style="background: linear-gradient(135deg, #f8fafc 0%, #fce7f3 100%); padding-top: 3rem; padding-bottom: 3rem;">
+          <div class="container">
+            <div class="section-header">
+              <div class="section-badge animate-on-scroll"><span class="badge-icon">🌟</span>Impacto</div>
+              <h2 class="section-title animate-on-scroll">Nossos <span class="highlight-orange">Números</span></h2>
+              <p class="section-subtitle animate-on-scroll">Veja o impacto que juntos estamos causando:</p>
+            </div>
+            <div class="cards-grid">
+              <div class="card card-orange animate-on-scroll card-hover-effect">
+                <div class="card-glow"></div>
+                <div class="card-icon orange"><lottie-player src="https://assets2.lottiefiles.com/packages/lf20_0yfsb3a1.json" background="transparent" speed="1" style="width: 60px; height: 60px;" loop autoplay></lottie-player></div>
+                <h3 class="card-title"><span data-counter="1200">0</span>+</h3>
+                <p class="card-description">Famílias atendidas</p>
+              </div>
+              <div class="card card-blue animate-on-scroll card-hover-effect">
+                <div class="card-glow"></div>
+                <div class="card-icon blue"><lottie-player src="https://assets2.lottiefiles.com/packages/lf20_4kx2q32n.json" background="transparent" speed="1" style="width: 60px; height: 60px;" loop autoplay></lottie-player></div>
+                <h3 class="card-title"><span data-counter="350">0</span>+</h3>
+                <p class="card-description">Voluntários ativos</p>
+              </div>
+              <div class="card card-green animate-on-scroll card-hover-effect">
+                <div class="card-glow"></div>
+                <div class="card-icon green"><lottie-player src="https://assets2.lottiefiles.com/packages/lf20_2ks3pjua.json" background="transparent" speed="1" style="width: 60px; height: 60px;" loop autoplay></lottie-player></div>
+                <h3 class="card-title"><span data-counter="5000">0</span>+</h3>
+                <p class="card-description">Atendimentos de saúde</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Seção de Áreas de Atuação -->
+        <section class="section section-cards">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge animate-on-scroll">
+                        <span class="badge-icon">🎯</span>
+                        Nossas áreas de atuação
+                    </div>
+                    <h2 class="section-title animate-on-scroll">
+                        Nossas Frentes
+                        <span class="highlight-blue">de Atuação</span>
+                    </h2>
+                    <p class="section-subtitle animate-on-scroll">
+                        Conheça as principais áreas em que focamos nossos esforços para gerar impacto positivo na comunidade.
+                    </p>
+                </div>
+                <div class="cards-grid">
+                    <div class="card card-orange animate-on-scroll card-hover-effect">
+                        <div class="card-glow"></div>
+                        <div class="card-icon orange"><span>❤️</span></div>
+                        <h3 class="card-title">Doações</h3>
+                        <p class="card-description">Sua contribuição financia nossas operações e ajuda quem mais precisa.</p>
+                        <a href="doacoes.html" class="card-link btn-magnetic">Saiba Mais →</a>
+                    </div>
+                    <div class="card card-blue animate-on-scroll card-hover-effect">
+                        <div class="card-glow"></div>
+                        <div class="card-icon blue"><span>🩺</span></div>
+                        <h3 class="card-title">Saúde</h3>
+                        <p class="card-description">Promovemos acesso a cuidados médicos e bem-estar para a comunidade.</p>
+                        <a href="saude.html" class="card-link btn-magnetic">Saiba Mais →</a>
+                    </div>
+                    <div class="card card-green animate-on-scroll card-hover-effect">
+                        <div class="card-glow"></div>
+                        <div class="card-icon green"><span>👥</span></div>
+                        <h3 class="card-title">Voluntariado</h3>
+                        <p class="card-description">Junte-se a nós e doe seu tempo e talento para transformar vidas.</p>
+                        <a href="voluntariado.html" class="card-link btn-magnetic">Saiba Mais →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Carrossel Swiper de Depoimentos -->
+        <section class="section" style="background: linear-gradient(135deg, #fce7f3 0%, #dbeafe 100%);">
+          <div class="container">
+            <div class="section-header">
+              <div class="section-badge animate-on-scroll"><span class="badge-icon">💬</span>Depoimentos</div>
+              <h2 class="section-title animate-on-scroll">O que dizem <span class="highlight-purple">nossos voluntários</span></h2>
+            </div>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card card-hover-effect">
+                    <div class="profile-photo">
+                      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Maria S." />
+                    </div>
+                    <h3 class="card-title">Maria S.</h3>
+                    <p class="card-description">“Participar da Esperança ONG mudou minha vida. Aqui encontrei propósito e amigos para a vida toda!”</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card card-hover-effect">
+                    <div class="profile-photo">
+                      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="João P." />
+                    </div>
+                    <h3 class="card-title">João P.</h3>
+                    <p class="card-description">“Ajudar no projeto de saúde me fez crescer como pessoa e profissional. Recomendo a todos!”</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card card-hover-effect">
+                    <div class="profile-photo">
+                      <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Ana L." />
+                    </div>
+                    <h3 class="card-title">Ana L.</h3>
+                    <p class="card-description">“Ser voluntária é uma experiência transformadora. A ONG faz um trabalho incrível!”</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-gradient"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-logo">
+                        <div class="logo-container">
+                            <img src="https://media.discordapp.net/attachments/1383954838328573987/1387620618664415242/logo.png?ex=685e01e8&is=685cb068&hm=8082d09bff761e60e2d00202ace0b088aeb51c744c0f3fe0086d7c0c0115f195&=&format=webp&quality=lossless&width=423&height=254" alt="Logo Care Together" class="logo-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="logo-icon" style="display: none;">❤️</div>
+                        </div>
+                        <span class="logo-text">Care Together</span>
+                    </div>
+                    <p class="footer-description">
+                        Transformando vidas através da solidariedade e do cuidado com aqueles que mais precisam.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link facebook social-hover">📘</a>
+                        <a href="#" class="social-link instagram social-hover">📷</a>
+                        <a href="#" class="social-link twitter social-hover">🐦</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <a href="index.html">Início</a>
+                    <a href="doacoes.html">Doações</a>
+                    <a href="como-doar.html">Como Doar</a>
+                    <a href="saude.html">Saúde</a>
+                    <a href="voluntariado.html">Voluntariado</a>
+                    <a href="desenvolvedores.html">Desenvolvedores</a>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <p>moretogustavo868@gmail.com</p>
+                    <p>(19) 99471-7011</p>
+                    <p>PIX: 19994717011</p>
+                    <p>Gustavo Moreto Torres</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Care Together. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+    // Loader elegante
+    window.addEventListener('DOMContentLoaded', function() {
+      const loader = document.getElementById('loader');
+      setTimeout(() => {
+        loader.classList.add('hidden');
+        setTimeout(() => loader.style.display = 'none', 600);
+      }, 1200);
+    });
+    // Inicialização AOS
+    AOS.init({ duration: 900, once: true });
+    // Swiper exemplo (carrossel de depoimentos ou parceiros)
+    if (document.querySelector('.swiper')) {
+      new Swiper('.swiper', {
+        loop: true,
+        autoplay: { delay: 3500, disableOnInteraction: false },
+        pagination: { el: '.swiper-pagination', clickable: true },
+        navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+        slidesPerView: 1,
+        spaceBetween: 24,
+        breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
+      });
+    }
+    // Contador animado
+    function animateCounter(el, to) {
+      let start = 0;
+      const duration = 1200;
+      const step = (timestamp, startTime) => {
+        if (!startTime) startTime = timestamp;
+        const progress = Math.min((timestamp - startTime) / duration, 1);
+        el.textContent = Math.floor(progress * (to - start) + start);
+        if (progress < 1) requestAnimationFrame(ts => step(ts, startTime));
+        else el.textContent = to;
+      };
+      requestAnimationFrame(step);
+    }
+    document.querySelectorAll('[data-counter]').forEach(el => {
+      animateCounter(el, parseInt(el.getAttribute('data-counter')));
+    });
+    </script>
+</body>
+</html>
